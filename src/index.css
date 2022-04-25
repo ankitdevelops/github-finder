@@ -1,0 +1,22 @@
+body {
+  background-color: #242B2E;
+}
+
+.user-search{
+  padding: 20px 30px;
+  width: 400px;
+}
+.user-search-btn {
+  padding: 20px 30px;
+}
+.main-container{
+  /* height: 80vh; */
+  display: flex;
+  justify-content:flex-start;
+  align-items:center;
+  /* overflow: scroll; */
+  
+}
+
+/* profile card */
+
