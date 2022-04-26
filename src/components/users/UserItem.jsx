@@ -11,6 +11,7 @@ const UserItem = ({ user }) => {
               <img
                 src={user.avatar_url}
                 className="rounded-circle"
+                alt={user.name}
                 width={80}
               />{" "}
             </div>

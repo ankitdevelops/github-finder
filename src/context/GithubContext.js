@@ -47,8 +47,8 @@ export const GithubProvider = ({ children }) => {
     });
 
     if (response.status === 404) {
-      // window.location = "/notfound"
-      console.log("Not Found")
+      window.location = "/notfound"
+      // console.log("Not Found")
     }else{
       const data = await response.json();
       dispatch({
@@ -70,8 +70,8 @@ export const GithubProvider = ({ children }) => {
     })
 
     if (response.status === 404) {
-      // window.location = "/notfound"
-      console.log("Not Found")
+      window.location = "/notfound"
+      // console.log("Not Found")
     }else{
       const data = await response.json();
       dispatch({

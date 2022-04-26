@@ -4,7 +4,7 @@ import GithubContext from "../../context/GithubContext";
 const UserSearch = () => {
 
   const [text,setText] = useState("")
-  const {users,searchUsers} = useContext(GithubContext)
+  const {searchUsers} = useContext(GithubContext)
 
   const handleChange = (e) => {
     setText(e.target.value)

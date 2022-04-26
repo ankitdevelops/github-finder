@@ -5,7 +5,7 @@ import GithubContext from "../../context/GithubContext";
 import Repos from "./Repos";
 import Spinner from "../layout/Spinner";
 const User = () => {
-  const { user, getUser, getRepos, repos } = useContext(GithubContext);
+  const { user, getUser, getRepos, repos,loading } = useContext(GithubContext);
 
   const params = useParams();
   // console.log(repos);
@@ -14,7 +14,7 @@ const User = () => {
     getRepos(params.login);
   }, []);
 
-  if (user.length === 0 || repos.length === 0) {
+  if (loading) {
     return  <div className="text-center">
     < Spinner/>
   </div>
@@ -31,7 +31,7 @@ const User = () => {
             <img
               src={user.avatar_url}
               className="rounded-circle text-center"
-              alt=""
+              alt={user.name}
               width={100}
               height={100}
             />
